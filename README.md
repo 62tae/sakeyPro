@@ -6,3 +6,12 @@
 2. Typescrpit
 3. Node Js
 4. Mongo DB 등.
+
+
+# Angular2 시작방법
+
+$npm install
+
+$npm start
+
+진행해주면 기본 설치 완료
