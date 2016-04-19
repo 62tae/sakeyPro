@@ -21,3 +21,5 @@ https://nodejs.org/en/
 angularJS 1.5.3 버전을 설치합니다.
 
 # 해야 할 것!
+
+**1. Node JS 서버 설치**
