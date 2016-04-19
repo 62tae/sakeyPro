@@ -30,7 +30,8 @@ angularJS 1.5.3 버전을 설치합니다.
 - Jquery: http://jquery.com/
 - MongoDB: https://www.mongodb.org/
 - React: http://reactkr.github.io/react/docs/getting-started-ko-KR.html
-- APIs
+
+-** APIs**
     - daum API: http://developers.daum.net/
     - kakao API: https://developers.kakao.com/
     - Naver API:http://developer.naver.com/wiki/pages/OpenAPI
@@ -41,3 +42,13 @@ angularJS 1.5.3 버전을 설치합니다.
 **1. Node JS 서버 설치**
 2. Index.html 수정 
 3. FrondEnd 꾸미기
+
+# File Structure!
+```
+sakeyApp/
+├── app/                               * Working directory
+│   ├── pages/                         * Contains all of our pages
+│   └── about/                     * About tab page
+├── package.json                       * Our javascript dependencies
+└── README.md                          * This file
+```
