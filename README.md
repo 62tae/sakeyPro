@@ -9,15 +9,10 @@ MEAN Stack 예제들을 통해서 진행하고 있으며, Github을 사용한 �
 
 프로젝트를 진행하기 위해서 몇가지 설치해야 할 것들이 있습니다.
 
-**Node Js 설치**
-
 https://nodejs.org/en/
 
 최신버전인 5.10 버전을 설치합니다.
 
-**npm 설치**
-
-https://www.npmjs.com/
 
 # 2. Angular JS 설치
 
