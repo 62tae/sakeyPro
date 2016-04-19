@@ -13,8 +13,15 @@ https://nodejs.org/en/
 
 최신버전인 5.1x 버전을 설치합니다.
 
+# Package.Json
+> npm init 생성
 
-# Package.Json 설치
+> 사용될 모듈들 설치 And 저장
+  npm install 'Modules Name' --save
+  ex) npm install express --save
+  --save 안 할시 Package.json 에 저장 안됨
+  
+# Modules 설치
 
 > $npm install
 
@@ -40,7 +47,7 @@ angularJS 1.5.3 버전을 설치합니다.
 # 해야 할 것!
 
 **1. Node JS 서버 설치**
-2. Index.html 수정 
+2. Index.html 수정
 3. FrondEnd 꾸미기
 
 # 파일 구조!
