@@ -20,6 +20,12 @@ https://nodejs.org/en/
 
 angularJS 1.5.3 버전을 설치합니다.
 
+# 참고 라이브러리 / API / Framework
+
+- Node Js https://nodejs.org/en/
+- Angular Js https://angularjs.org/
+- BootStrap http://getbootstrap.com/
+
 # 해야 할 것!
 
 **1. Node JS 서버 설치**
