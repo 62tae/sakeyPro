@@ -18,6 +18,7 @@
   "homepage": "https://github.com/62tae/sakeyPro#readme",
   "dependencies": {
     "ejs": "^2.4.1",
-    "express": "^4.13.4"
+    "express": "^4.13.4",
+    "mongojs": "^2.3.0"
   }
 }
