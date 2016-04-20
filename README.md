@@ -50,7 +50,7 @@ angularJS 1.5.3 버전을 설치합니다.
 
 # 해야 할 것!
 
-**1. Node JS 서버 설치**
+1. Node JS 서버 설치
 2. Index.html 수정
 3. FrondEnd 꾸미기
 4. Angular App 제작
