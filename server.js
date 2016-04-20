@@ -1,7 +1,5 @@
 //모듈 사용
 var express = require('express');
-var mongojs = require('mongojs');
-var db = ('sakey',['member']); //mongoDB database And Table
 
 var app = express();
 
