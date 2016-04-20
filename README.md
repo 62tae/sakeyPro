@@ -5,6 +5,10 @@
 
 MEAN Stack 예제들을 통해서 진행하고 있으며, Github을 사용한 협업을 테스트하고 있습니다.
 
+**프로젝트 진행중인 예제**
+http://jasonwatmore.com/post/2015/12/09/MEAN-Stack-User-Registration-and-Login-Example.aspx#app-folder
+https://github.com/cornflourblue/mean-stack-registration-login-example
+
 # 1. Node & npm 설치
 
 프로젝트를 진행하기 위해서 몇가지 설치해야 할 것들이 있습니다.
@@ -49,13 +53,21 @@ angularJS 1.5.3 버전을 설치합니다.
 **1. Node JS 서버 설치**
 2. Index.html 수정
 3. FrondEnd 꾸미기
+4. Angular App 제작
 
 # 파일 구조!
 ```
 sakeyApp/
-├── app/                               * Working directory
+├── app/                               * 메인 페이지
 │   ├── pages/                         * Contains all of our pages
-│   └── about/                     * About tab page
+│   └── about/                         * About tab page
+├── views/                             * 보여지는 부분
+│   ├── partials/                      * 자주 사용되는 부분 분리
+│   │   ├── header.ejs/                * header
+│   │   ├── footer.ejs/                * footer
+│   ├── login.ejs/                     * 로그인 페이지
+│   ├── register.ejs/                  * 회원가입 페이지
+│   └── skeleton.html/                 * 전체 폼 디자인시 사용한 유령파일
 ├── package.json                       * Our javascript dependencies
 └── README.md                          * This file
 ```
