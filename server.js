@@ -13,7 +13,7 @@ app.set('views',__dirname +'/views');
 app.set('view engine','ejs');
 //HomePage 부분
 app.get('/', function(req,res){
-  res.render('join');
+  res.render('login');
 });
 
 app.listen(3000, function(){
