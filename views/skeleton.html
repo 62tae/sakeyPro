@@ -1,0 +1,94 @@
+<!-- header.ejs -- 시작 부분 -->
+<!DOCTYPE html> <!-- 문서타입 -->
+<html lang="ko"> <!-- 휴먼랭귀지 -->
+<head>
+    <meta charset="utf-8"> <!-- 문자셋 -->
+    <title>sakeyProJect</title>
+    <!-- Bootstrap CDN -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <style type="text/css">
+        body {
+            padding-top: 30px;
+        }
+        .form-container{
+            width: 400px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+	<h1 style="text-align: center; font-weight: lighter; padding: 10%">SAKEY PROJECT</h1>
+<!-- header.ejs -- 끝 부분 -->
+
+<!-- login.ejs -- 시작 부분 -->
+
+    <%- include ('partials/header') %>
+    <div class="form-container">
+        <h2>로그인</h2>
+        	<!-- 에러 발생 부분 -->
+        	<% if(locals.error) { %>
+        	<div class="alert alert-danger"><%= error %></div>
+        	<% } %>
+        	<!-- 성공 -->
+			<div class="alert alert-success"><%= success &></div>
+		<form method="post" accept-charset="utf-8">
+			<div class="form-group">
+				<label for="username">Username</label>
+				<input id="username" type="text" name="username" value="<%= locals.username || ''%>" class="form-control"/>
+			</div>
+			<div class="form-group">
+				<label for="password">Password</label>
+				<input id="password" type="password" name="password" class="form-control"/>
+			</div>
+			<div class="form-group">
+				<button type="submit" class="btn btn-primary">Login</button>
+				<a href="/register"	class="btn btn-link">Register</a>
+			</div>
+		</form>
+    </div>
+	<%- include('partials/footer') %>
+	
+<!-- login.ejs -- 끝 부분 -->
+
+<!-- register.ejs -- 첫 부분 -->
+
+	<%- include ('partials/header') %>
+	<div class="form-container">
+		<h2>회원가입</h2>
+		<% if(locals.error) { %>
+		<div class="alert alert-danger"><%= error %></div>
+		<form method="post" accept-charset="utf-8">
+			<div class="form-group">
+				<label for="firstName">First name</label>
+				<input id="firstName" type="text" name="firstName" value="<%= locals.firstName || ' ' %>" class="form-control" required />
+			</div>
+			<div class="form-group">
+				<label for="lastName">Last name</label>
+				<input id="lastName" type="text" name="lastName" value="<%= locals.lastName || ' ' %>" class="form-control" required />
+			</div>
+			<div class="form-group">
+				<label for="username">Username</label>
+				<input id="username" type="text" name="username" value="<%= locals.username || ' ' %>" class="form-control" required />
+			</div>
+			<div class="form-group">
+				<label for="password">Password</label>
+				<input id="password" type="password" name="password" class="form-control" required />
+			</div>
+			<div class="form-group">
+				<button type="submit" class="btn btn-primary">회원가입</button>
+				<a href="/login" class="btn btn-link">취소</a>
+			</div>
+		</form>
+	<%- include('partials/footer') %>
+	
+<!-- register.ejs -- 끝 부분 -->
+
+<!-- footer.ejs 부분 -->
+<h6 style="color: gray; text-align: right"><em>designed by SAKEY</em></h6>
+</body>
+</html>
