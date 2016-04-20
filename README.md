@@ -58,16 +58,30 @@ angularJS 1.5.3 버전을 설치합니다.
 # 파일 구조!
 ```
 sakeyApp/
-├── app/                               * 메인 페이지
-│   ├── pages/                         * Contains all of our pages
-│   └── about/                         * About tab page
+├── app/                               * Angular 메인 페이지
+│   ├── account/                       * Account 페이지
+│   │   ├── index.html                 * Account 페이지 뷰어
+│   │   └── index.controller.js        * Account 페이지 컨트롤러
+│   ├── app-content/                   * 페이지 소스 파일들
+│   │   ├── angular.min.js             * Angular 1.x 소스파일
+│   │   └── app.css                    * 메인 페이지 디자인 CSS파일
+│   ├── app-service/                   * 앱 서비스 폴더
+│   │   ├── flash.service.js           * 플래쉬 서비스 기능
+│   │   └── user.service.js            * 유저 컨트롤 기능
+│   ├── home/                          * 메인 홈 페이지 폴더
+│   │   ├── index.html                 * 홈 페이지 뷰어
+│   │   └── index.controller.js        * 홈 페이지 컨트롤러
+│   ├── app.js/                        * Angular 루트 Js
+│   └── index.html/                    * Angular 루트 파일
+│
 ├── views/                             * 보여지는 부분
 │   ├── partials/                      * 자주 사용되는 부분 분리
 │   │   ├── header.ejs/                * header
 │   │   ├── footer.ejs/                * footer
-│   ├── login.ejs/                     * 로그인 페이지
+│   ├── login.ejs/                     * 로그인 페이지 (ejs 루트파일)
 │   ├── register.ejs/                  * 회원가입 페이지
 │   └── skeleton.html/                 * 전체 폼 디자인시 사용한 유령파일
+│
 ├── package.json                       * Our javascript dependencies
 └── README.md                          * This file
 ```
