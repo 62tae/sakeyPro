@@ -15,7 +15,7 @@ app.set('view engine','ejs');
 app.get('/', function(req,res){
   res.render('login');
 });
-
-app.listen(3000, function(){
+// 서버 Port 설정
+var server = app.listen(3000, function(){
     console.log('Server Running Connected :3000');
 });
