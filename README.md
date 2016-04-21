@@ -9,6 +9,9 @@ MEAN Stack 예제들을 통해서 진행하고 있으며, Github을 사용한 �
 http://jasonwatmore.com/post/2015/12/09/MEAN-Stack-User-Registration-and-Login-Example.aspx#app-folder
 https://github.com/cornflourblue/mean-stack-registration-login-example
 
+
+**애니메이션 효과 적용**
+http://jasonwatmore.com/post/2016/01/20/Angular-ngAnimate-Tutorial-with-UI-Router.aspx
 # 1. Node & npm 설치
 
 프로젝트를 진행하기 위해서 몇가지 설치해야 할 것들이 있습니다.
@@ -36,6 +39,8 @@ angularJS 1.5.3 버전을 설치합니다.
 - Github README Markdown: https://guides.github.com/features/mastering-markdown/
 - Node Js: https://nodejs.org/en/
 - Angular Js: https://angularjs.org/
+- Angular Animate: https://docs.angularjs.org/api/ngAnimate
+- Angular Material: https://material.angularjs.org/latest/
 - BootStrap: http://getbootstrap.com/
 - BootStrap Angular: https://angular-ui.github.io/bootstrap/
 - Jquery: http://jquery.com/
@@ -64,13 +69,20 @@ sakeyApp/
 │   │   └── index.controller.js        * Account 페이지 컨트롤러
 │   ├── app-content/                   * 페이지 소스 파일들
 │   │   ├── angular.min.js             * Angular 1.x 소스파일
+│   │   ├── app.less                   * 상품페이지 및 전체 디자인 Css파일
 │   │   └── app.css                    * 메인 페이지 디자인 CSS파일
 │   ├── app-service/                   * 앱 서비스 폴더
 │   │   ├── flash.service.js           * 플래쉬 서비스 기능
+│   │   ├── product.service.js         * 상품 추가 기능 및 관리 기능 Js파일
 │   │   └── user.service.js            * 유저 컨트롤 기능
 │   ├── home/                          * 메인 홈 페이지 폴더
 │   │   ├── index.html                 * 홈 페이지 뷰어
 │   │   └── index.controller.js        * 홈 페이지 컨트롤러
+│   ├── products/                      * 상품페이지 폴더
+│   │   ├── add-edit.html              * 상품 추가 슬라이더 
+│   │   ├── add-edit.controller.js     * 상품 추가 슬라이더 기능 Js
+│   │   ├── index.html                 * 상품 페이지 뷰어
+│   │   └── index.controller.js        * 상품 페이지 컨트롤러
 │   ├── app.js/                        * Angular 루트 Js
 │   └── index.html/                    * Angular 루트 파일
 │
@@ -83,5 +95,6 @@ sakeyApp/
 │   └── skeleton.html/                 * 전체 폼 디자인시 사용한 유령파일
 │
 ├── package.json                       * Our javascript dependencies
-└── README.md                          * This file
+├── server.js                          * 서버 생성 파일
+└── README.md                          * GitHub 페이지 설명 파일
 ```
