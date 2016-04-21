@@ -1,4 +1,5 @@
 //모듈 사용
+require('rootpath');
 var express = require('express');
 var bodyParser = require('body-parser');
 var app = express();
@@ -12,8 +13,11 @@ app.use(bodyParser.json());
 app.set('views',__dirname +'/views');
 app.set('view engine','ejs');
 //HomePage 부분
-app.get('/', function(req,res){
+app.get('/login', function(req,res){
   res.render('login');
+});
+app.get('/register', function(req,res){
+  res.render('register');
 });
 // 서버 Port 설정
 var server = app.listen(3000, function(){
