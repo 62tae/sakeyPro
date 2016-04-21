@@ -21,8 +21,10 @@ https://nodejs.org/en/
 최신버전인 5.1x 버전을 설치합니다.
 
 # Package.Json
-> npm init 생성( 이곳에는 이미 Package.json 파일 존재 생성 안해도 됨)
-사용될 모듈들 설치 And 저장
+> npm init 
+
+Package.json생성( 이곳에는 이미 Package.json 파일 존재 생성 안해도 됨) 사용될 모듈들 설치 And 저장
+
 > npm install 'Modules Name' --save
   
   ex) npm install express --save
