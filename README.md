@@ -22,9 +22,9 @@ https://nodejs.org/en/
 
 # Package.Json
 > npm init 생성( 이곳에는 이미 Package.json 파일 존재 생성 안해도 됨)
-
-> 사용될 모듈들 설치 And 저장
-  npm install 'Modules Name' --save
+사용될 모듈들 설치 And 저장
+> npm install 'Modules Name' --save
+  
   ex) npm install express --save
   --save 안 할시 Package.json 에 저장 안됨
 
