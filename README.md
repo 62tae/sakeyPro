@@ -53,14 +53,14 @@ angularJS 1.5.3 버전을 설치합니다.
     - Naver API:http://developer.naver.com/wiki/pages/OpenAPI
     - google API: https://console.developers.google.com/
 
-# 해야 할 것!
+# 해야 할 것
 
 1. Node JS 서버 설치
 2. Index.html 수정
 3. FrondEnd 꾸미기
 4. Angular App 제작
 
-# 파일 구조!
+# 파일 구조
 ```
 sakeyApp/
 ├── app/                               * Angular 메인 페이지
