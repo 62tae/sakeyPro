@@ -1,0 +1,134 @@
+/* GENERA: STYLES AND CLASSES
+------------------------------------------------*/
+
+body{
+    padding: 5px;
+}
+
+/* HEADER STYLES
+------------------------------------------------*/
+main {
+    padding: 0 20px;
+    min-height: 300px;
+    
+    .products-tabel{
+        margin-top: 20px;
+        
+        .delete-column {
+            width: 60px;
+        }
+    }
+    
+    /* TRANSITION ANIMATIONS FOR MAIN VIEW ------*/
+    
+    /* 전환 효과 시작 부분 */
+    
+    &.ng-enter {
+        /* 시작 전환 효과 5초 */
+        transition: .5s;
+        
+        /* start with opacity 0 (invisible)------*/
+        opacity: 0;
+    }
+    
+    /* 전환 효과 끝 부분 */
+    &.ng-enter-active {
+        /* end with opacity 1 (fade in) */
+        opacity: 1;
+    }
+    
+    /* side form */
+    .view-side-form {
+        .side-form {
+            position: fixed;
+            top: 0;
+            left: 9;
+            right: 0;
+            bottom: 0;
+            
+            .content {
+                position: absolute;
+                z-index: 100;
+                top: 0;
+                right: 0;
+                width: 80%;
+                height: 100%;
+                overflow: auto;
+                background: #fff;
+                padding: 20px;
+                border-left: 1px solid #e0e0e0;
+            }
+            
+            .background {
+                background: #000;
+                opacity: .8;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        
+        /* TRANSITION ANIMATIONS FOR SIDE FORM VIEW */
+        /* enable animations for side for view */
+        &.ng-enter,
+        &.ng-leave {
+            /* transition of enter and leave for .5s */
+            transition: .5s;
+        }
+        
+        /* start 'enter' transition */
+        &.ng-enter {
+            .side-form{
+                .content {
+                    /* start with content 80% off the right of the page */
+                    right: -80%;
+                }
+                .background {
+                    /* start with background opacity 0 (invisible) */
+                    opacity: 0;
+                }
+            }
+        }
+        
+        /* end 'enter' transition */
+        &.ng-enter-active {
+            .side-form {
+                .content {
+                    /* transition the right position which
+                        slide the content into view */
+                    transition: right .5s;
+                    right: 0;
+                }
+                
+                .background {
+                    /* transition the background opacity to fades it in */
+                    transition: opacity .5s;
+                    
+                    /* end with background opacity 0.8 to give the overlay effect */
+                    opacity: .8;
+                }
+            }
+        }
+        
+        /*end 'leave' transition */
+        &.ng-leave-active {
+            .side-form {
+                .content {
+                    /* transition the right position which
+                        slides the content out of view */
+                    transition: right .5s;
+                    
+                    /* end transition with the content completely off the page */
+                    right: -100%;
+                }
+                
+                .background {
+                    /*transition the background opacity to fades it out */
+                    transition: opacity .5s;
+                    
+                    /*end with background opacity 0 to hide it */
+                    opacity: 0;
+                }
+            }
+        }
+    }
+}

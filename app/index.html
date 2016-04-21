@@ -3,7 +3,6 @@
 <head>
 	<meta charset="utf-8">
 	<title>MEAN Stack 욱성이와 기태가 함께하는 재미있는 민스택!</title>
-    <title>sakeyProJect</title>
     
     <!-- Bootstrap CDN -->
     <!-- Latest compiled and minified CSS -->
@@ -13,6 +12,7 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <link href="app-content/app.css" rel="stylesheet"/>
+	<link href="app-content/app.less" rel="stylesheet/less" type="text/css" />
 </head>
 <body>
 	<!-- Header -->
@@ -20,6 +20,7 @@
 		<ul class="nav nav-tabs">
 			<li ng-class="{active: activeTab === 'home'}"><a ui-sref="home">Home</a></li>
 			<li ng-class="{active: activeTab === 'account'}"><a ui-sref="account">Account</a></li>
+			<li ng-class="{active: activeTab === 'product'}"><a ui-sref="products">Products</a></li>
 			<li><a href="/login" target="_self">Logout</a></li>
 		</ul>
 		<div class="flash-message" ng-if="flash">
@@ -34,14 +35,17 @@
 	<footer></footer>
 	
 	<!-- external scripts -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="app-content/angular.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
- 
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+ 	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.js"></script>
+
+	
 	<!-- application scripts -->
 	<script src="app.js"></script>
-	<script src="app-services/user.service.js"></script>
-	<script src="app-services/flash.service.js"></script>
+	<script src="app-service/user.service.js"></script>
+	<script src="app-service/flash.service.js"></script>
+	<script src="app-service/product.service.js"></script>
 	<script src="home/index.controller.js"></script>
 	<script src="account/index.controller.js"></script>
 </body>
